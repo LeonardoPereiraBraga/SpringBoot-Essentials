@@ -1,0 +1,9 @@
+#Comando pra deixar o console mais clean
+logging:
+  pattern:
+    console: "%d{yyyy-MM HH:mm} == %logger{2} >>> %msg%n"
+
+#Comando pra deixar a tela 404 mais limpa
+server:
+  error:
+    include-stacktrace: never
