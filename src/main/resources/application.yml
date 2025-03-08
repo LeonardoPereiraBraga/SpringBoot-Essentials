@@ -7,3 +7,13 @@ logging:
 server:
   error:
     include-stacktrace: never
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3308/anime?createDatabaseIfNotExist=true
+    username: root
+    password: root
+  #Config pra toda vez que iniciar o banco ele vai atualizar o banco
+  jpa:
+    hibernate:
+      ddl-auto: update
